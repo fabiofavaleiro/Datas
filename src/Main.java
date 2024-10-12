@@ -46,5 +46,16 @@ public class Main {
         System.out.println("Diferença de data até hoje: " + diferencaData);
 
 
+        Date dateInicial = new SimpleDateFormat("y-M-d").parse("2021-06-07");
+
+        Calendar calendar1 = Calendar.getInstance();
+        calendar1.setTime(dateInicial);
+
+        for (int parcela = 1; parcela < 12; parcela++) {
+            calendar1.add(Calendar.MONTH , 1);
+
+            System.out.println(String.format(String.format("Parcela numero " + parcela + " Vence: " +  new SimpleDateFormat("yyyy/MM/dd").format(calendar1.getTime()))));
+        }
+        System.out.println(new SimpleDateFormat("yyyy/MM/dd").format(calendar1.getTime()));
         }
     }
