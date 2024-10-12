@@ -14,6 +14,7 @@ public class NovaAPIData {
 
         LocalDateTime dataHoraAtual = LocalDateTime.now();
         System.out.println(dataHoraAtual);
-        System.out.println(dataHoraAtual.format(DateTimeFormatter.ofPattern("y/M/d H:m:s")));
+        System.out.println(dataHoraAtual.format(DateTimeFormatter.ofPattern("y/MMMM/d H:m:s:n")));
+        System.out.println(dataHoraAtual.getDayOfWeek());
     }
 }
