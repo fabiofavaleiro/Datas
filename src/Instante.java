@@ -24,6 +24,12 @@ public class Instante {
 
         System.out.println(duracao.toMillis());
 
+        System.out.println(duracao.toNanos());
+
+        System.out.println(duracao.toNanosPart());
+
+        System.out.println(duracao.toSeconds());
+
 
     }
 }
